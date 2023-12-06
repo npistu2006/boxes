@@ -1,0 +1,45 @@
+*{margin:0; padding: 0; box-sizing: border-box;}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(rgb(6, 26, 62), rgb(14, 217, 235));
+}
+.container, .container2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap:1rem;
+}
+.box{
+    height: 15vh;
+    width: 15vh;
+    box-shadow: 0 0 10px 1px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    scale:1;
+    transition: scale .3s;
+}
+.blur{
+    filter:blur(5px);
+}
+.container2{
+    margin-top: 1rem;
+    justify-items: center;
+    justify-content: center;
+    width: 50vh
+}
+.field input, .field button, .field select{
+    font-size: 1.3rem;
+}
+.seven input {
+    height: 2rem;
+    width: 7vh;
+}
+.nine input{width: 4rem;}
+.eight input{width: 7rem;}
